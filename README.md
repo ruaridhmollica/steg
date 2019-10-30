@@ -1,4 +1,4 @@
-# steg
+# Steg
 This repository contains a PPM image steganography program, written in C
 
 # Running
