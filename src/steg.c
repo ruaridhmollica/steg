@@ -250,12 +250,13 @@ char * decode(struct PPM * im, unsigned int secret){
   long long pixelBinaryG;
   long long pixelBinaryB;
   int binaryarry[500];
-  int asciiArr[50];
+  int asciiArr[60];
   int imageSize = im->width * im->height;
   int foundEnd = 0;
   int i = 0;
-  char word[50];
-  int r,k,j,m;
+  char word[60];
+  int r,j,m;
+  int k;
   int lastDigit;
   int binsize = 0;
   srand(secret);//sets the see to be the secret the user enters. obviously if the user enters an incorrect see then it will not work
@@ -322,8 +323,8 @@ char * decode(struct PPM * im, unsigned int secret){
 
   for(k=0;k<3;++k){
     printf("%d ", asciiArr[k]);//prints the contents of the ascii array
-    char word[k] = asciiArr[k];
-    printf("%c ", word[k]);
+   // char word[1] = asciiArr[k];
+    //printf("%c ", word[k]);
   }
 
 }
